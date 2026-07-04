@@ -406,9 +406,15 @@
       border-radius: var(--radius);
       overflow: hidden;
       box-shadow: var(--shadow);
-      background:
-        linear-gradient(180deg, rgba(15, 39, 68, 0.08), rgba(15, 39, 68, 0.2)),
-        url("assets/story-yiannis-google-maps.jpeg") center / cover;
+      background: var(--white);
+    }
+
+    .story-media iframe {
+      display: block;
+      width: 100%;
+      min-height: inherit;
+      height: 100%;
+      border: 0;
     }
 
     .counters {
@@ -1009,7 +1015,15 @@
             </div>
           </div>
         </div>
-        <div class="story-media reveal" style="--delay: 180ms;" role="img" aria-label="Yianni's Kitchen counter and menu at St. Lawrence Market"></div>
+        <div class="story-media reveal" style="--delay: 180ms;">
+          <iframe
+            title="Yianni's Kitchen location on Google Maps"
+            src="https://www.google.com/maps?cid=2886649469648617190&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen>
+          </iframe>
+        </div>
       </div>
     </section>
 
